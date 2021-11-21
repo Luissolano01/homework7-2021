@@ -50,7 +50,7 @@ document.querySelector("#mute").addEventListener("click", function(){
 
 	video.currentTime = video.currentTime + 15
 	
-	if (video.currentTime >= 60){
+	if (video.currentTime >= 65){
 		console.log("Original location", (video.currentTime - 15), "seconds");
 		console.log("Going back to beginning");
 
@@ -71,3 +71,13 @@ document.getElementById("slider").oninput = function () {
 	video.volume = (this.value/100);
 };
 
+
+/*o.g vs oldschool view */
+document.querySelector("#orig").addEventListener("click", function(){
+	video.classList.remove("oldSchool");
+	video.classList.add("video");
+});
+document.querySelector("#vintage").addEventListener("click", function(){
+	video.classList.remove("video");
+	video.classList.add("oldSchool");
+});
