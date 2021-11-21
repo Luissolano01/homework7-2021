@@ -71,12 +71,3 @@ document.getElementById("slider").oninput = function () {
 	video.volume = (this.value/100);
 };
 
-/*o.g vs oldschool view */
-document.querySelector("#orig").addEventListener("click", function(){
-	video.classList.remove("oldSchool");
-	video.classList.add("video");
-});
-document.querySelector("#vintage").addEventListener("click", function(){
-	video.classList.remove("video");
-	video.classList.add("oldSchool");
-});
